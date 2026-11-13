@@ -1,0 +1,38 @@
+====================================================================
+VISITOR PHOTO SLIDESHOW - GIT COMMAND PROMPT HISTORY & LOG
+Repository: https://github.com/Rudra7461/Visitor-Photo-Slideshow-.git
+====================================================================
+
+--- STEP 1: NAVIGATE TO PROJECT DIRECTORY ---
+cd C:\xampp\htdocs\visitor_slideshow
+
+--- STEP 2: INITIALIZE GIT AND CONFIGURE REMOTE ---
+git init
+git remote set-url origin https://github.com/Rudra7461/Visitor-Photo-Slideshow-.git
+git branch -M main
+
+--- STEP 3: INCREMENTAL COMMITS (ASSIGNMENT REQUIREMENT) ---
+
+# Commit 1: Database and Connection Setup
+git add database.sql db.php .env.example
+git commit -m "Initial commit: Set up MySQL database schema and PDO connection"
+
+# Commit 2: Core PHP Application Logic & Visitor Tracking
+git add index.php upload.php slideshow.php api_get_photos.php
+git commit -m "feat: Implement secure file upload, visitor tracking, and async TV polling"
+
+# Commit 3: External CSS & UI/UX Styling
+git add style.css
+git commit -m "ui: Extract CSS to external stylesheet and apply glassmorphism design"
+
+# Commit 4: Required Documentation Files
+git add README.md ASSUMPTIONS.md AI_LOG.md ARCHITECTURE.md Tests.md
+git commit -m "docs: Add architectural assumptions, AI logs, manual test results, and README"
+
+--- STEP 4: PUSH COMMITS TO GITHUB ---
+git push -u origin main
+
+--- STEP 5: FINAL COMMIT (SAVING THIS LOG FILE TO REPO) ---
+git add git_commands_log.txt
+git commit -m "docs: Add Git command execution log file"
+git push origin main
